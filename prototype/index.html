@@ -68,7 +68,7 @@ $('startBuilt').onclick=()=>startGame(LIB[$('language').value][$('topic').value]
 $('useCustom').onclick=()=>{const pairs=studentSet?studentSet.pairs.map(([target,english])=>[english,target]):parsePairs();if(pairs.length<2){$('menuMsg').textContent='Please enter at least two valid sentence pairs separated by a tab or |.';return}$('menuMsg').textContent='';startGame(pairs)};
 $('backMenu').onclick=showMenu;
 const SENTENCE_API='https://boringteacher-sentences-api-staging.mcproductionsdk.workers.dev';
-const SHARE_BASE='https://boringteacher.com/sentences-invaders/';
+const SHARE_BASE='https://mcproductionsdk-beep.github.io/Sentences-Invaders/prototype/';
 let studentSet=null;
 async function apiRequest(path,options={}){
  const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),12000);
