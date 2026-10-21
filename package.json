@@ -1,0 +1,1 @@
+{"name":"sentences-invaders-sharing-tests","private":true,"type":"module","scripts":{"test":"node --test backend/tests/*.test.js"}}
