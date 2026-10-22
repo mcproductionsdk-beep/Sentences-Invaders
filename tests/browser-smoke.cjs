@@ -14,6 +14,7 @@ const server=http.createServer((req,res)=>{
  fs.createReadStream(path.resolve(file)).pipe(res);
 });
 await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+await page.route('https://boringteacher.com/libraries/sentences/v1.json',route=>route.fulfill({status:200,contentType:'application/json',body:fs.readFileSync('content/sentences.v1.json','utf8')}));
 const url='http://127.0.0.1:'+server.address().port+'/';
 await page.goto(url);
 await page.waitForFunction(()=>document.querySelector('#menuMsg').textContent.includes('Shared grammar library loaded'));
