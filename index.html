@@ -54,7 +54,7 @@ for(const [lang,banks] of Object.entries(CURATED))for(const [topic,pairs] of Obj
 async function loadSharedSentenceLibrary(){
   const notice=$('menuMsg');
   try{
-    const response=await fetch('./content/sentences.v1.json',{cache:'no-cache'});
+    const response=await fetch('https://boringteacher.com/libraries/sentences/v1.json',{cache:'no-cache'});
     if(!response.ok)throw new Error('HTTP '+response.status);
     const data=await response.json();
     const locales=['es-ES','de-DE','da-DK','fr-FR','it-IT'];
