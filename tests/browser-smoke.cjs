@@ -46,6 +46,18 @@ for(const locale of ['es-ES','de-DE','da-DK','fr-FR','it-IT']){
  if(!(await page.locator('#menu').isVisible()))throw Error(locale+' menu did not return');
  console.log(locale,'topics',topics,'prompt',english,'tiles',tileCount);
 }
+// Student link flow: external grammar fetch must not overwrite teacher set or its status.
+const student=await browser.newPage({viewport:{width:1280,height:900}});
+student.on('pageerror',e=>errors.push('student: '+e.message));
+await student.route('https://boringteacher.com/libraries/sentences/v1.json',route=>route.fulfill({status:200,contentType:'application/json',body:fs.readFileSync('content/sentences.v1.json','utf8')}));
+await student.route('**/sentence-sets/SABCDEFGH',route=>route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({ok:true,set:{title:'Teacher test',language:'de-DE',pairs:[['Ich lese Bücher','I read books'],['Wir lernen Deutsch','We learn German']]}})}));
+await student.goto(url+'#set=SABCDEFGH');
+await student.waitForFunction(()=>document.querySelector('#menuMsg').textContent==='Ready to play.');
+if(await student.locator('#language').inputValue()!=='de-DE')throw Error('Student locale lost');
+if(!(await student.locator('#custom').inputValue()).includes('I read books\\tIch lese Bücher'))throw Error('Student pairs lost');
+await student.locator('#useCustom').click();
+if(!(await student.locator('#gameArea').isVisible()))throw Error('Student game did not start');
+await student.close();
 if(errors.length)throw Error('Browser JS errors: '+errors.join('; '));
 await browser.close();
 await new Promise(resolve=>server.close(resolve));
