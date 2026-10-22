@@ -1,7 +1,7 @@
 name: Sentence Invaders browser verification
 on:
   push:
-    branches: [fix/target-language-distractors]
+    branches: [fix/target-language-distractors, dev/shared-sentence-library-v1]
   workflow_dispatch:
 jobs:
   verify:
