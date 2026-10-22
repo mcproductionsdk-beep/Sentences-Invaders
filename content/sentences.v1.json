@@ -1,0 +1,1666 @@
+{
+  "schemaVersion": 1,
+  "description": "Canonical built-in sentence bank candidate; pairs are [English, target language].",
+  "languages": {
+    "es-ES": {
+      "Present tense": [
+        [
+          "I eat bread",
+          "Como pan"
+        ],
+        [
+          "She drinks water",
+          "Ella bebe agua"
+        ],
+        [
+          "We study Spanish",
+          "Estudiamos español"
+        ],
+        [
+          "I read a book at home",
+          "Leo un libro en casa"
+        ],
+        [
+          "My brother plays football",
+          "Mi hermano juega al fútbol"
+        ],
+        [
+          "They live near the school",
+          "Ellos viven cerca del colegio"
+        ],
+        [
+          "Every morning I walk to school",
+          "Cada mañana camino al colegio"
+        ],
+        [
+          "My friends listen to music after class",
+          "Mis amigos escuchan música después de clase"
+        ],
+        [
+          "On Saturdays we cook dinner together",
+          "Los sábados preparamos la cena juntos"
+        ]
+      ],
+      "Present progressive": [
+        [
+          "I am reading a book",
+          "Estoy leyendo un libro"
+        ],
+        [
+          "They are playing outside",
+          "Están jugando afuera"
+        ]
+      ],
+      "Preterite": [
+        [
+          "Yesterday I ate pizza",
+          "Ayer comí pizza"
+        ],
+        [
+          "She bought bread",
+          "Ella compró pan"
+        ],
+        [
+          "We went to the park",
+          "Fuimos al parque"
+        ],
+        [
+          "I watched a film last night",
+          "Anoche vi una película"
+        ],
+        [
+          "He drank water after football",
+          "Él bebió agua después del fútbol"
+        ],
+        [
+          "They visited their grandmother",
+          "Visitaron a su abuela"
+        ],
+        [
+          "On Friday we played basketball",
+          "El viernes jugamos al baloncesto"
+        ],
+        [
+          "Yesterday I listened to music at home",
+          "Ayer escuché música en casa"
+        ],
+        [
+          "Last weekend my friends travelled by train",
+          "El fin de semana pasado mis amigos viajaron en tren"
+        ]
+      ],
+      "Imperfect": [
+        [
+          "When I was young I played football",
+          "Cuando era pequeño jugaba fútbol"
+        ],
+        [
+          "We lived near the sea",
+          "Vivíamos cerca del mar"
+        ]
+      ],
+      "Present perfect": [
+        [
+          "I have finished my homework",
+          "He terminado mis deberes"
+        ],
+        [
+          "They have arrived early",
+          "Han llegado temprano"
+        ]
+      ],
+      "Past perfect": [
+        [
+          "I had already eaten",
+          "Ya había comido"
+        ],
+        [
+          "She had left the house",
+          "Ella había salido de casa"
+        ]
+      ],
+      "Future tense": [
+        [
+          "Tomorrow I will eat rice",
+          "Mañana comeré arroz"
+        ],
+        [
+          "She will call her friend",
+          "Ella llamará a su amiga"
+        ],
+        [
+          "We will study tonight",
+          "Estudiaremos esta noche"
+        ],
+        [
+          "I will visit my grandmother on Sunday",
+          "Visitaré a mi abuela el domingo"
+        ],
+        [
+          "They will play football after school",
+          "Jugarán al fútbol después del colegio"
+        ],
+        [
+          "My brother will cook dinner",
+          "Mi hermano preparará la cena"
+        ],
+        [
+          "Next week we will go to the beach",
+          "La próxima semana iremos a la playa"
+        ],
+        [
+          "Tomorrow I will buy a new book",
+          "Mañana compraré un libro nuevo"
+        ],
+        [
+          "In summer my friends will travel to Spain",
+          "En verano mis amigos viajarán a España"
+        ]
+      ],
+      "Conditional": [
+        [
+          "I would like some water",
+          "Me gustaría un poco de agua"
+        ],
+        [
+          "We would go together",
+          "Iríamos juntos"
+        ]
+      ],
+      "Present subjunctive": [
+        [
+          "I hope you come tomorrow",
+          "Espero que vengas mañana"
+        ],
+        [
+          "It is important that you study",
+          "Es importante que estudies"
+        ]
+      ],
+      "Past subjunctive": [
+        [
+          "I wanted you to come",
+          "Quería que vinieras"
+        ],
+        [
+          "If I had time I would travel",
+          "Si tuviera tiempo viajaría"
+        ]
+      ],
+      "Imperative": [
+        [
+          "Open the door",
+          "Abre la puerta"
+        ],
+        [
+          "Listen to the teacher",
+          "Escucha al profesor"
+        ]
+      ],
+      "Ser vs estar": [
+        [
+          "She is a doctor",
+          "Ella es médica"
+        ],
+        [
+          "The door is open",
+          "La puerta está abierta"
+        ]
+      ],
+      "Por vs para": [
+        [
+          "This gift is for you",
+          "Este regalo es para ti"
+        ],
+        [
+          "We walk through the park",
+          "Caminamos por el parque"
+        ]
+      ],
+      "Reflexive verbs": [
+        [
+          "I get up early",
+          "Me levanto temprano"
+        ],
+        [
+          "She washes her hands",
+          "Ella se lava las manos"
+        ]
+      ],
+      "Direct object pronouns": [
+        [
+          "I see him every day",
+          "Lo veo todos los días"
+        ],
+        [
+          "She buys it today",
+          "Ella lo compra hoy"
+        ]
+      ],
+      "Indirect object pronouns": [
+        [
+          "I give her a book",
+          "Le doy un libro"
+        ],
+        [
+          "We tell them the truth",
+          "Les decimos la verdad"
+        ]
+      ],
+      "Articles and gender": [
+        [
+          "The house is small",
+          "La casa es pequeña"
+        ],
+        [
+          "A boy reads a book",
+          "Un niño lee un libro"
+        ]
+      ],
+      "Adjective agreement": [
+        [
+          "The red cars are new",
+          "Los coches rojos son nuevos"
+        ],
+        [
+          "The girls are happy",
+          "Las niñas están contentas"
+        ]
+      ],
+      "Possessives": [
+        [
+          "My brother is here",
+          "Mi hermano está aquí"
+        ],
+        [
+          "Their house is big",
+          "Su casa es grande"
+        ]
+      ],
+      "Prepositions of place": [
+        [
+          "The cat is under the table",
+          "El gato está debajo de la mesa"
+        ],
+        [
+          "The school is near the park",
+          "La escuela está cerca del parque"
+        ]
+      ],
+      "Prepositions of time": [
+        [
+          "I work in the morning",
+          "Trabajo por la mañana"
+        ],
+        [
+          "We meet at eight",
+          "Nos vemos a las ocho"
+        ]
+      ],
+      "Questions": [
+        [
+          "Where do you live",
+          "Dónde vives"
+        ],
+        [
+          "What are you doing",
+          "Qué estás haciendo"
+        ]
+      ],
+      "Negation": [
+        [
+          "I do not eat meat",
+          "No como carne"
+        ],
+        [
+          "She never arrives late",
+          "Ella nunca llega tarde"
+        ]
+      ],
+      "Word order": [
+        [
+          "Tomorrow we will study",
+          "Mañana estudiaremos"
+        ],
+        [
+          "My sister speaks French",
+          "Mi hermana habla francés"
+        ]
+      ],
+      "Comparatives": [
+        [
+          "My house is bigger",
+          "Mi casa es más grande"
+        ],
+        [
+          "This book is better",
+          "Este libro es mejor"
+        ]
+      ],
+      "Conjunctions": [
+        [
+          "I study because I like languages",
+          "Estudio porque me gustan los idiomas"
+        ],
+        [
+          "We eat and then we leave",
+          "Comemos y después salimos"
+        ]
+      ],
+      "Relative clauses": [
+        [
+          "The girl who sings is my sister",
+          "La chica que canta es mi hermana"
+        ],
+        [
+          "The book that I bought is new",
+          "El libro que compré es nuevo"
+        ]
+      ],
+      "Conditional sentences": [
+        [
+          "If it rains we will stay home",
+          "Si llueve nos quedaremos en casa"
+        ],
+        [
+          "If I study I will learn",
+          "Si estudio aprenderé"
+        ]
+      ],
+      "Passive voice": [
+        [
+          "The letter was written yesterday",
+          "La carta fue escrita ayer"
+        ],
+        [
+          "The food is prepared here",
+          "La comida se prepara aquí"
+        ]
+      ],
+      "Time expressions": [
+        [
+          "I always arrive early",
+          "Siempre llego temprano"
+        ],
+        [
+          "We go on Fridays",
+          "Vamos los viernes"
+        ]
+      ],
+      "Infinitive and gerund": [
+        [
+          "I want to learn Spanish",
+          "Quiero aprender español"
+        ],
+        [
+          "She continues working",
+          "Ella sigue trabajando"
+        ]
+      ]
+    },
+    "de-DE": {
+      "Present tense": [
+        [
+          "I drink water",
+          "Ich trinke Wasser"
+        ],
+        [
+          "She reads a book",
+          "Sie liest ein Buch"
+        ],
+        [
+          "We play football",
+          "Wir spielen Fußball"
+        ],
+        [
+          "I learn German at school",
+          "Ich lerne Deutsch in der Schule"
+        ],
+        [
+          "My brother eats an apple",
+          "Mein Bruder isst einen Apfel"
+        ],
+        [
+          "They live in Berlin",
+          "Sie wohnen in Berlin"
+        ],
+        [
+          "Every morning I go to school",
+          "Jeden Morgen gehe ich zur Schule"
+        ],
+        [
+          "On Saturday we cook together",
+          "Am Samstag kochen wir zusammen"
+        ],
+        [
+          "After school my friends listen to music",
+          "Nach der Schule hören meine Freunde Musik"
+        ]
+      ],
+      "Simple past": [
+        [
+          "I went home",
+          "Ich ging nach Hause"
+        ],
+        [
+          "She read the book",
+          "Sie las das Buch"
+        ]
+      ],
+      "Perfect tense": [
+        [
+          "I ate bread",
+          "Ich habe Brot gegessen"
+        ],
+        [
+          "She bought a book",
+          "Sie hat ein Buch gekauft"
+        ],
+        [
+          "We played football",
+          "Wir haben Fußball gespielt"
+        ],
+        [
+          "Yesterday I drank water",
+          "Gestern habe ich Wasser getrunken"
+        ],
+        [
+          "He went to school",
+          "Er ist zur Schule gegangen"
+        ],
+        [
+          "They visited their grandmother",
+          "Sie haben ihre Oma besucht"
+        ],
+        [
+          "On Saturday we cooked dinner",
+          "Am Samstag haben wir Abendessen gekocht"
+        ],
+        [
+          "Last week I watched a film",
+          "Letzte Woche habe ich einen Film gesehen"
+        ],
+        [
+          "Yesterday my friends travelled to Berlin",
+          "Gestern sind meine Freunde nach Berlin gefahren"
+        ]
+      ],
+      "Past perfect": [
+        [
+          "I had already eaten",
+          "Ich hatte schon gegessen"
+        ],
+        [
+          "She had left",
+          "Sie war gegangen"
+        ]
+      ],
+      "Future tense": [
+        [
+          "I will read tomorrow",
+          "Ich werde morgen lesen"
+        ],
+        [
+          "She will cook dinner",
+          "Sie wird Abendessen kochen"
+        ],
+        [
+          "We will play football",
+          "Wir werden Fußball spielen"
+        ],
+        [
+          "Tomorrow I will buy bread",
+          "Morgen werde ich Brot kaufen"
+        ],
+        [
+          "He will visit his friend",
+          "Er wird seinen Freund besuchen"
+        ],
+        [
+          "They will learn German at school",
+          "Sie werden in der Schule Deutsch lernen"
+        ],
+        [
+          "On Saturday we will go to the park",
+          "Am Samstag werden wir in den Park gehen"
+        ],
+        [
+          "Next week I will read a new book",
+          "Nächste Woche werde ich ein neues Buch lesen"
+        ],
+        [
+          "In summer my friends will travel to Berlin",
+          "Im Sommer werden meine Freunde nach Berlin fahren"
+        ]
+      ],
+      "Modal verbs": [
+        [
+          "I can swim",
+          "Ich kann schwimmen"
+        ],
+        [
+          "We must leave now",
+          "Wir müssen jetzt gehen"
+        ]
+      ],
+      "Separable verbs": [
+        [
+          "I get up early",
+          "Ich stehe früh auf"
+        ],
+        [
+          "She calls her friend",
+          "Sie ruft ihren Freund an"
+        ]
+      ],
+      "Verb-second word order": [
+        [
+          "Tomorrow I will work",
+          "Morgen werde ich arbeiten"
+        ],
+        [
+          "Today we read books",
+          "Heute lesen wir Bücher"
+        ]
+      ],
+      "Subordinate clauses": [
+        [
+          "I know that he is coming",
+          "Ich weiß dass er kommt"
+        ],
+        [
+          "She stays home because she is ill",
+          "Sie bleibt zu Hause weil sie krank ist"
+        ]
+      ],
+      "Accusative case": [
+        [
+          "I see the dog",
+          "Ich sehe den Hund"
+        ],
+        [
+          "She buys a book",
+          "Sie kauft ein Buch"
+        ]
+      ],
+      "Dative case": [
+        [
+          "I help the man",
+          "Ich helfe dem Mann"
+        ],
+        [
+          "He gives the child a gift",
+          "Er gibt dem Kind ein Geschenk"
+        ]
+      ],
+      "Genitive case": [
+        [
+          "The color of the car is red",
+          "Die Farbe des Autos ist rot"
+        ],
+        [
+          "The door of the house is open",
+          "Die Tür des Hauses ist offen"
+        ]
+      ],
+      "Articles and gender": [
+        [
+          "The girl reads",
+          "Das Mädchen liest"
+        ],
+        [
+          "The table is large",
+          "Der Tisch ist groß"
+        ]
+      ],
+      "Adjective endings": [
+        [
+          "I see a small dog",
+          "Ich sehe einen kleinen Hund"
+        ],
+        [
+          "She has a red bag",
+          "Sie hat eine rote Tasche"
+        ]
+      ],
+      "Reflexive verbs": [
+        [
+          "I wash myself",
+          "Ich wasche mich"
+        ],
+        [
+          "He is happy",
+          "Er freut sich"
+        ]
+      ],
+      "Prepositions of place": [
+        [
+          "The book is on the table",
+          "Das Buch liegt auf dem Tisch"
+        ],
+        [
+          "We go into the house",
+          "Wir gehen in das Haus"
+        ]
+      ],
+      "Prepositions of time": [
+        [
+          "We meet on Monday",
+          "Wir treffen uns am Montag"
+        ],
+        [
+          "I work in the morning",
+          "Ich arbeite am Morgen"
+        ]
+      ],
+      "Negation": [
+        [
+          "I do not understand",
+          "Ich verstehe nicht"
+        ],
+        [
+          "I have no time",
+          "Ich habe keine Zeit"
+        ]
+      ],
+      "Questions": [
+        [
+          "Where do you live",
+          "Wo wohnst du"
+        ],
+        [
+          "Are you coming tomorrow",
+          "Kommst du morgen"
+        ]
+      ],
+      "Comparatives": [
+        [
+          "This car is faster",
+          "Dieses Auto ist schneller"
+        ],
+        [
+          "My room is bigger",
+          "Mein Zimmer ist größer"
+        ]
+      ],
+      "Relative clauses": [
+        [
+          "The man who lives here is friendly",
+          "Der Mann der hier wohnt ist freundlich"
+        ],
+        [
+          "The book that I read is interesting",
+          "Das Buch das ich lese ist interessant"
+        ]
+      ],
+      "Imperative": [
+        [
+          "Open the window",
+          "Öffne das Fenster"
+        ],
+        [
+          "Come here",
+          "Komm her"
+        ]
+      ],
+      "Conditional": [
+        [
+          "I would like a coffee",
+          "Ich hätte gern einen Kaffee"
+        ],
+        [
+          "I would go home",
+          "Ich würde nach Hause gehen"
+        ]
+      ]
+    },
+    "da-DK": {
+      "Present tense": [
+        [
+          "I drink water",
+          "Jeg drikker vand"
+        ],
+        [
+          "She reads a book",
+          "Hun læser en bog"
+        ],
+        [
+          "We play football",
+          "Vi spiller fodbold"
+        ],
+        [
+          "I eat bread at school",
+          "Jeg spiser brød i skolen"
+        ],
+        [
+          "My brother lives in Copenhagen",
+          "Min bror bor i København"
+        ],
+        [
+          "They listen to music",
+          "De lytter til musik"
+        ],
+        [
+          "Every morning I go to school",
+          "Hver morgen går jeg i skole"
+        ],
+        [
+          "On Saturday we make dinner",
+          "Om lørdagen laver vi aftensmad"
+        ],
+        [
+          "After school my friends play in the park",
+          "Efter skole leger mine venner i parken"
+        ]
+      ],
+      "Past tense": [
+        [
+          "I ate bread",
+          "Jeg spiste brød"
+        ],
+        [
+          "She bought a book",
+          "Hun købte en bog"
+        ],
+        [
+          "We played football",
+          "Vi spillede fodbold"
+        ],
+        [
+          "Yesterday I drank water",
+          "I går drak jeg vand"
+        ],
+        [
+          "He went to school",
+          "Han gik i skole"
+        ],
+        [
+          "They visited their grandmother",
+          "De besøgte deres bedstemor"
+        ],
+        [
+          "On Saturday we made dinner",
+          "I lørdags lavede vi aftensmad"
+        ],
+        [
+          "Last week I watched a film",
+          "I sidste uge så jeg en film"
+        ],
+        [
+          "Yesterday my friends travelled by train",
+          "I går rejste mine venner med tog"
+        ]
+      ],
+      "Perfect tense": [
+        [
+          "I have read the book",
+          "Jeg har læst bogen"
+        ],
+        [
+          "We have arrived",
+          "Vi er ankommet"
+        ]
+      ],
+      "Past perfect": [
+        [
+          "I had already eaten",
+          "Jeg havde allerede spist"
+        ],
+        [
+          "She had left",
+          "Hun var gået"
+        ]
+      ],
+      "Future constructions": [
+        [
+          "I will work tomorrow",
+          "Jeg vil arbejde i morgen"
+        ],
+        [
+          "We are going to travel",
+          "Vi skal rejse"
+        ]
+      ],
+      "Modal verbs": [
+        [
+          "I can swim",
+          "Jeg kan svømme"
+        ],
+        [
+          "You must listen",
+          "Du skal lytte"
+        ]
+      ],
+      "Verb-second word order": [
+        [
+          "Tomorrow I will work",
+          "I morgen vil jeg arbejde"
+        ],
+        [
+          "Today we are reading",
+          "I dag læser vi"
+        ]
+      ],
+      "Main clause negation": [
+        [
+          "I do not understand",
+          "Jeg forstår ikke"
+        ],
+        [
+          "She does not live here",
+          "Hun bor ikke her"
+        ]
+      ],
+      "Subordinate clause negation": [
+        [
+          "I know that he does not come",
+          "Jeg ved at han ikke kommer"
+        ],
+        [
+          "She says that she is not tired",
+          "Hun siger at hun ikke er træt"
+        ]
+      ],
+      "Questions": [
+        [
+          "Where do you live",
+          "Hvor bor du"
+        ],
+        [
+          "Do you speak Danish",
+          "Taler du dansk"
+        ]
+      ],
+      "Articles and gender": [
+        [
+          "The house is large",
+          "Huset er stort"
+        ],
+        [
+          "A girl reads",
+          "En pige læser"
+        ]
+      ],
+      "Definite noun forms": [
+        [
+          "The dog is sleeping",
+          "Hunden sover"
+        ],
+        [
+          "The books are here",
+          "Bøgerne er her"
+        ]
+      ],
+      "Adjective agreement": [
+        [
+          "A big house",
+          "Et stort hus"
+        ],
+        [
+          "The small children are playing",
+          "De små børn leger"
+        ]
+      ],
+      "Possessives": [
+        [
+          "My book is here",
+          "Min bog er her"
+        ],
+        [
+          "Our house is small",
+          "Vores hus er lille"
+        ]
+      ],
+      "Prepositions of place": [
+        [
+          "The cat is under the table",
+          "Katten er under bordet"
+        ],
+        [
+          "We are in the garden",
+          "Vi er i haven"
+        ]
+      ],
+      "Prepositions of time": [
+        [
+          "We meet on Monday",
+          "Vi mødes på mandag"
+        ],
+        [
+          "I work in the morning",
+          "Jeg arbejder om morgenen"
+        ]
+      ],
+      "Reflexive verbs": [
+        [
+          "She washes herself",
+          "Hun vasker sig"
+        ],
+        [
+          "He is looking forward to it",
+          "Han glæder sig"
+        ]
+      ],
+      "Comparatives": [
+        [
+          "My bike is faster",
+          "Min cykel er hurtigere"
+        ],
+        [
+          "This book is better",
+          "Denne bog er bedre"
+        ]
+      ],
+      "Conjunctions": [
+        [
+          "I stay home because it rains",
+          "Jeg bliver hjemme fordi det regner"
+        ],
+        [
+          "We eat and then leave",
+          "Vi spiser og går så"
+        ]
+      ],
+      "Imperative": [
+        [
+          "Open the door",
+          "Åbn døren"
+        ],
+        [
+          "Listen carefully",
+          "Lyt godt efter"
+        ]
+      ],
+      "Word order with adverbs": [
+        [
+          "I often read books",
+          "Jeg læser ofte bøger"
+        ],
+        [
+          "Tomorrow she will probably come",
+          "I morgen kommer hun nok"
+        ]
+      ],
+      "Future with vil and skal": [
+        [
+          "I will read tomorrow",
+          "Jeg vil læse i morgen"
+        ],
+        [
+          "She will make dinner",
+          "Hun vil lave aftensmad"
+        ],
+        [
+          "We will play football",
+          "Vi vil spille fodbold"
+        ],
+        [
+          "Tomorrow I will buy bread",
+          "I morgen vil jeg købe brød"
+        ],
+        [
+          "He will visit his friend",
+          "Han vil besøge sin ven"
+        ],
+        [
+          "They will learn Danish",
+          "De vil lære dansk"
+        ],
+        [
+          "On Saturday we will go to the park",
+          "På lørdag vil vi gå i parken"
+        ],
+        [
+          "Next week I will read a new book",
+          "I næste uge vil jeg læse en ny bog"
+        ],
+        [
+          "In summer my friends will travel to Aarhus",
+          "Til sommer vil mine venner rejse til Aarhus"
+        ]
+      ]
+    },
+    "fr-FR": {
+      "Present tense": [
+        [
+          "I eat bread",
+          "Je mange du pain"
+        ],
+        [
+          "She drinks water",
+          "Elle boit de l’eau"
+        ],
+        [
+          "We play football",
+          "Nous jouons au football"
+        ],
+        [
+          "I read a book at home",
+          "Je lis un livre à la maison"
+        ],
+        [
+          "My brother studies French",
+          "Mon frère étudie le français"
+        ],
+        [
+          "They live in Paris",
+          "Ils habitent à Paris"
+        ],
+        [
+          "Every morning I go to school",
+          "Chaque matin je vais à l’école"
+        ],
+        [
+          "On Saturday we cook together",
+          "Le samedi nous cuisinons ensemble"
+        ],
+        [
+          "After school my friends listen to music",
+          "Après l’école mes amis écoutent de la musique"
+        ]
+      ],
+      "Passé composé": [
+        [
+          "I ate bread",
+          "J’ai mangé du pain"
+        ],
+        [
+          "She bought a book",
+          "Elle a acheté un livre"
+        ],
+        [
+          "We played football",
+          "Nous avons joué au football"
+        ],
+        [
+          "Yesterday I drank water",
+          "Hier j’ai bu de l’eau"
+        ],
+        [
+          "He went to school",
+          "Il est allé à l’école"
+        ],
+        [
+          "They visited their grandmother",
+          "Ils ont rendu visite à leur grand-mère"
+        ],
+        [
+          "On Saturday we cooked dinner",
+          "Samedi nous avons préparé le dîner"
+        ],
+        [
+          "Last week I watched a film",
+          "La semaine dernière j’ai regardé un film"
+        ],
+        [
+          "Yesterday my friends travelled by train",
+          "Hier mes amis ont voyagé en train"
+        ]
+      ],
+      "Imparfait": [
+        [
+          "When I was young I played outside",
+          "Quand j’étais petit je jouais dehors"
+        ],
+        [
+          "We lived in Paris",
+          "Nous habitions à Paris"
+        ]
+      ],
+      "Plus-que-parfait": [
+        [
+          "I had already finished",
+          "J’avais déjà terminé"
+        ],
+        [
+          "She had left",
+          "Elle était partie"
+        ]
+      ],
+      "Futur simple": [
+        [
+          "I will read tomorrow",
+          "Je lirai demain"
+        ],
+        [
+          "She will cook dinner",
+          "Elle préparera le dîner"
+        ],
+        [
+          "We will play football",
+          "Nous jouerons au football"
+        ],
+        [
+          "Tomorrow I will buy bread",
+          "Demain j’achèterai du pain"
+        ],
+        [
+          "He will visit his friend",
+          "Il rendra visite à son ami"
+        ],
+        [
+          "They will learn French",
+          "Ils apprendront le français"
+        ],
+        [
+          "On Saturday we will go to the park",
+          "Samedi nous irons au parc"
+        ],
+        [
+          "Next week I will read a new book",
+          "La semaine prochaine je lirai un nouveau livre"
+        ],
+        [
+          "In summer my friends will travel to Paris",
+          "En été mes amis voyageront à Paris"
+        ]
+      ],
+      "Futur proche": [
+        [
+          "I am going to study",
+          "Je vais étudier"
+        ],
+        [
+          "We are going to leave",
+          "Nous allons partir"
+        ]
+      ],
+      "Conditional": [
+        [
+          "I would like a coffee",
+          "Je voudrais un café"
+        ],
+        [
+          "We would travel together",
+          "Nous voyagerions ensemble"
+        ]
+      ],
+      "Subjunctive": [
+        [
+          "I want you to come",
+          "Je veux que tu viennes"
+        ],
+        [
+          "It is necessary that we leave",
+          "Il faut que nous partions"
+        ]
+      ],
+      "Imperative": [
+        [
+          "Open the door",
+          "Ouvre la porte"
+        ],
+        [
+          "Listen to me",
+          "Écoute-moi"
+        ]
+      ],
+      "Negation": [
+        [
+          "I do not speak French",
+          "Je ne parle pas français"
+        ],
+        [
+          "She never eats meat",
+          "Elle ne mange jamais de viande"
+        ]
+      ],
+      "Reflexive verbs": [
+        [
+          "I get up early",
+          "Je me lève tôt"
+        ],
+        [
+          "She washes her hands",
+          "Elle se lave les mains"
+        ]
+      ],
+      "Direct object pronouns": [
+        [
+          "I see him",
+          "Je le vois"
+        ],
+        [
+          "She knows her",
+          "Elle la connaît"
+        ]
+      ],
+      "Indirect object pronouns": [
+        [
+          "I speak to him",
+          "Je lui parle"
+        ],
+        [
+          "We give them a book",
+          "Nous leur donnons un livre"
+        ]
+      ],
+      "Y and en pronouns": [
+        [
+          "I am going there",
+          "J’y vais"
+        ],
+        [
+          "I want some",
+          "J’en veux"
+        ]
+      ],
+      "Articles and gender": [
+        [
+          "The house is beautiful",
+          "La maison est belle"
+        ],
+        [
+          "A boy is reading",
+          "Un garçon lit"
+        ]
+      ],
+      "Adjective agreement": [
+        [
+          "The girls are happy",
+          "Les filles sont heureuses"
+        ],
+        [
+          "The red cars are fast",
+          "Les voitures rouges sont rapides"
+        ]
+      ],
+      "Prepositions of place": [
+        [
+          "The cat is under the table",
+          "Le chat est sous la table"
+        ],
+        [
+          "The school is near the park",
+          "L’école est près du parc"
+        ]
+      ],
+      "Prepositions of time": [
+        [
+          "We meet on Monday",
+          "Nous nous retrouvons lundi"
+        ],
+        [
+          "I work in the morning",
+          "Je travaille le matin"
+        ]
+      ],
+      "Questions": [
+        [
+          "Where do you live",
+          "Où habites-tu"
+        ],
+        [
+          "Do you speak French",
+          "Parles-tu français"
+        ]
+      ],
+      "Relative clauses": [
+        [
+          "The book that I read is good",
+          "Le livre que je lis est bon"
+        ],
+        [
+          "The woman who sings is here",
+          "La femme qui chante est ici"
+        ]
+      ],
+      "Comparatives": [
+        [
+          "This car is faster",
+          "Cette voiture est plus rapide"
+        ],
+        [
+          "My house is bigger",
+          "Ma maison est plus grande"
+        ]
+      ],
+      "Conditional sentences": [
+        [
+          "If it rains we will stay home",
+          "S’il pleut nous resterons à la maison"
+        ],
+        [
+          "If I had time I would travel",
+          "Si j’avais le temps je voyagerais"
+        ]
+      ],
+      "Word order": [
+        [
+          "Tomorrow we will leave",
+          "Demain nous partirons"
+        ],
+        [
+          "She often reads",
+          "Elle lit souvent"
+        ]
+      ]
+    },
+    "it-IT": {
+      "Present tense": [
+        [
+          "I eat bread",
+          "Mangio pane"
+        ],
+        [
+          "She drinks water",
+          "Lei beve acqua"
+        ],
+        [
+          "We play football",
+          "Giochiamo a calcio"
+        ],
+        [
+          "I read a book at home",
+          "Leggo un libro a casa"
+        ],
+        [
+          "My brother studies Italian",
+          "Mio fratello studia italiano"
+        ],
+        [
+          "They live in Rome",
+          "Loro vivono a Roma"
+        ],
+        [
+          "Every morning I go to school",
+          "Ogni mattina vado a scuola"
+        ],
+        [
+          "On Saturday we cook together",
+          "Il sabato cuciniamo insieme"
+        ],
+        [
+          "After school my friends listen to music",
+          "Dopo scuola i miei amici ascoltano musica"
+        ]
+      ],
+      "Passato prossimo": [
+        [
+          "I ate bread",
+          "Ho mangiato pane"
+        ],
+        [
+          "She bought a book",
+          "Lei ha comprato un libro"
+        ],
+        [
+          "We played football",
+          "Abbiamo giocato a calcio"
+        ],
+        [
+          "Yesterday I drank water",
+          "Ieri ho bevuto acqua"
+        ],
+        [
+          "He went to school",
+          "Lui è andato a scuola"
+        ],
+        [
+          "They visited their grandmother",
+          "Hanno visitato la nonna"
+        ],
+        [
+          "On Saturday we cooked dinner",
+          "Sabato abbiamo preparato la cena"
+        ],
+        [
+          "Last week I watched a film",
+          "La settimana scorsa ho visto un film"
+        ],
+        [
+          "Yesterday my friends travelled by train",
+          "Ieri i miei amici hanno viaggiato in treno"
+        ]
+      ],
+      "Imperfetto": [
+        [
+          "When I was young I played outside",
+          "Quando ero piccolo giocavo fuori"
+        ],
+        [
+          "We lived in Milan",
+          "Vivevamo a Milano"
+        ]
+      ],
+      "Trapassato prossimo": [
+        [
+          "I had already eaten",
+          "Avevo già mangiato"
+        ],
+        [
+          "She had left",
+          "Era partita"
+        ]
+      ],
+      "Future tense": [
+        [
+          "I will read tomorrow",
+          "Leggerò domani"
+        ],
+        [
+          "She will cook dinner",
+          "Lei preparerà la cena"
+        ],
+        [
+          "We will play football",
+          "Giocheremo a calcio"
+        ],
+        [
+          "Tomorrow I will buy bread",
+          "Domani comprerò il pane"
+        ],
+        [
+          "He will visit his friend",
+          "Lui visiterà il suo amico"
+        ],
+        [
+          "They will learn Italian",
+          "Impareranno italiano"
+        ],
+        [
+          "On Saturday we will go to the park",
+          "Sabato andremo al parco"
+        ],
+        [
+          "Next week I will read a new book",
+          "La prossima settimana leggerò un libro nuovo"
+        ],
+        [
+          "In summer my friends will travel to Rome",
+          "In estate i miei amici viaggeranno a Roma"
+        ]
+      ],
+      "Conditional": [
+        [
+          "I would like some water",
+          "Vorrei un po’ di acqua"
+        ],
+        [
+          "We would travel together",
+          "Viaggeremmo insieme"
+        ]
+      ],
+      "Present subjunctive": [
+        [
+          "I hope you are well",
+          "Spero che tu stia bene"
+        ],
+        [
+          "I think she is here",
+          "Penso che lei sia qui"
+        ]
+      ],
+      "Past subjunctive": [
+        [
+          "I hoped you would come",
+          "Speravo che tu venissi"
+        ],
+        [
+          "If I had time I would read",
+          "Se avessi tempo leggerei"
+        ]
+      ],
+      "Imperative": [
+        [
+          "Open the door",
+          "Apri la porta"
+        ],
+        [
+          "Listen carefully",
+          "Ascolta attentamente"
+        ]
+      ],
+      "Reflexive verbs": [
+        [
+          "I get up early",
+          "Mi alzo presto"
+        ],
+        [
+          "She washes her hands",
+          "Si lava le mani"
+        ]
+      ],
+      "Direct object pronouns": [
+        [
+          "I see him",
+          "Lo vedo"
+        ],
+        [
+          "She buys it",
+          "Lo compra"
+        ]
+      ],
+      "Indirect object pronouns": [
+        [
+          "I write to her",
+          "Le scrivo"
+        ],
+        [
+          "I give him a book",
+          "Gli do un libro"
+        ]
+      ],
+      "Combined pronouns": [
+        [
+          "I give it to him",
+          "Glielo do"
+        ],
+        [
+          "She sends it to me",
+          "Me lo manda"
+        ]
+      ],
+      "Ci and ne": [
+        [
+          "I go there",
+          "Ci vado"
+        ],
+        [
+          "I want two of them",
+          "Ne voglio due"
+        ]
+      ],
+      "Articles and gender": [
+        [
+          "The house is small",
+          "La casa è piccola"
+        ],
+        [
+          "A boy reads",
+          "Un ragazzo legge"
+        ]
+      ],
+      "Adjective agreement": [
+        [
+          "The red cars are new",
+          "Le macchine rosse sono nuove"
+        ],
+        [
+          "The girls are happy",
+          "Le ragazze sono felici"
+        ]
+      ],
+      "Prepositions of place": [
+        [
+          "The book is on the table",
+          "Il libro è sul tavolo"
+        ],
+        [
+          "The cat is under the chair",
+          "Il gatto è sotto la sedia"
+        ]
+      ],
+      "Prepositions of time": [
+        [
+          "I work in the morning",
+          "Lavoro di mattina"
+        ],
+        [
+          "We meet on Monday",
+          "Ci vediamo lunedì"
+        ]
+      ],
+      "Questions": [
+        [
+          "Where do you live",
+          "Dove abiti"
+        ],
+        [
+          "What are you doing",
+          "Che cosa fai"
+        ]
+      ],
+      "Negation": [
+        [
+          "I do not understand",
+          "Non capisco"
+        ],
+        [
+          "She never eats meat",
+          "Non mangia mai carne"
+        ]
+      ],
+      "Comparatives": [
+        [
+          "This car is faster",
+          "Questa macchina è più veloce"
+        ],
+        [
+          "My house is bigger",
+          "La mia casa è più grande"
+        ]
+      ],
+      "Relative clauses": [
+        [
+          "The book that I read is interesting",
+          "Il libro che leggo è interessante"
+        ],
+        [
+          "The woman who sings is here",
+          "La donna che canta è qui"
+        ]
+      ],
+      "Conditional sentences": [
+        [
+          "If it rains we stay home",
+          "Se piove restiamo a casa"
+        ],
+        [
+          "If I study I will learn",
+          "Se studio imparerò"
+        ]
+      ],
+      "Word order": [
+        [
+          "Tomorrow we will leave",
+          "Domani partiremo"
+        ],
+        [
+          "She always reads",
+          "Lei legge sempre"
+        ]
+      ]
+    }
+  }
+}
