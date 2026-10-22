@@ -70,11 +70,15 @@ async function loadSharedSentenceLibrary(){
       }
     }
     for(const locale of locales)LIB[locale]=next[locale];
+    const selectedTopic=$('topic').value;
     updateTopics();
-    if(notice&&!studentSet)notice.textContent='Shared grammar library loaded (development preview).';
+    if(Object.prototype.hasOwnProperty.call(LIB[$('language').value],selectedTopic)){
+      $('topic').value=selectedTopic;updateBankInfo();
+    }
+    if(notice&&!$('menu').classList.contains('student-mode'))notice.textContent='Shared grammar library loaded.';
   }catch(error){
     console.warn('Shared grammar library unavailable; using embedded language-correct banks',error);
-    if(notice&&!studentSet)notice.textContent='Using built-in grammar library (offline fallback).';
+    if(notice&&!$('menu').classList.contains('student-mode'))notice.textContent='Using built-in grammar library (offline fallback).';
   }
 }
 
