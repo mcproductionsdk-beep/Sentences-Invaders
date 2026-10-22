@@ -54,7 +54,7 @@ await student.route('**/sentence-sets/SABCDEFGH',route=>route.fulfill({status:20
 await student.goto(url+'#set=SABCDEFGH');
 await student.waitForFunction(()=>document.querySelector('#menuMsg').textContent==='Ready to play.');
 if(await student.locator('#language').inputValue()!=='de-DE')throw Error('Student locale lost');
-if(!(await student.locator('#custom').inputValue()).includes('I read books\\tIch lese Bücher'))throw Error('Student pairs lost');
+if(!(await student.locator('#custom').inputValue()).includes('I read books\tIch lese Bücher'))throw Error('Student pairs lost');
 await student.locator('#useCustom').click();
 if(!(await student.locator('#gameArea').isVisible()))throw Error('Student game did not start');
 await student.close();
