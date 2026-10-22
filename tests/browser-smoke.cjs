@@ -1,12 +1,30 @@
 const {chromium}=require('playwright');
-const fs=require('node:fs'),path=require('node:path');
+const fs=require('node:fs'),path=require('node:path'),http=require('node:http');
 (async()=>{
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const errors=[];
 const page=await browser.newPage({viewport:{width:1280,height:900}});
 page.on('pageerror',e=>errors.push(e.message));
-const url='file://'+path.resolve('index.html');
+const server=http.createServer((req,res)=>{
+ const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);
+ const files={'/':'index.html','/content/sentences.v1.json':'content/sentences.v1.json'};
+ const file=files[pathname];
+ if(!file){res.writeHead(404);return res.end('Not found')}
+ res.setHeader('Content-Type',file.endsWith('.json')?'application/json':'text/html');
+ fs.createReadStream(path.resolve(file)).pipe(res);
+});
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+const url='http://127.0.0.1:'+server.address().port+'/';
 await page.goto(url);
+await page.waitForFunction(()=>document.querySelector('#menuMsg').textContent.includes('Shared grammar library loaded'));
+const library=JSON.parse(fs.readFileSync('content/sentences.v1.json','utf8'));
+for(const locale of Object.keys(library.languages)){
+ await page.locator('#language').selectOption(locale);
+ const expected=Object.keys(library.languages[locale]);
+ const actual=await page.locator('#topic option').allTextContents();
+ if(JSON.stringify(actual)!==JSON.stringify(expected))throw Error(locale+' topic menu differs from shared JSON');
+}
+
 fs.mkdirSync('browser-screenshots',{recursive:true});
 for(const locale of ['es-ES','de-DE','da-DK','fr-FR','it-IT']){
  await page.locator('#language').selectOption(locale);
@@ -29,4 +47,5 @@ for(const locale of ['es-ES','de-DE','da-DK','fr-FR','it-IT']){
 }
 if(errors.length)throw Error('Browser JS errors: '+errors.join('; '));
 await browser.close();
+await new Promise(resolve=>server.close(resolve));
 })().catch(e=>{console.error(e);process.exit(1)});
