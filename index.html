@@ -51,9 +51,25 @@ const CURATED={"es-ES":{"Present tense":[["I eat bread","Como pan"],["She drinks
 for(const [lang,banks] of Object.entries(CURATED))for(const [topic,pairs] of Object.entries(banks))LIB[lang][topic]=pairs;
 let activeLanguage='es-ES';
 function tokenize(t){return t.trim().replace(/[.!?。！？]+$/u,'').split(/\s+/).filter(Boolean).map(w=>w.replace(/[.!?。！？]+$/u,''))}
-function makeSentence(pair){const words=tokenize(pair[1]);const all=[...new Set(words)];return {en:pair[0],words,waves:words.map((w,i)=>{const alternatives=[...new Set([...all.filter(x=>x!==w),...['ayer','hoy','mañana','no','sí','aquí','muy','pero','con','en','un','una','yo','ella','nosotros','está','es','trabajo','ser','y','de','le','la','el'].filter(x=>x!==w)])];const result=[w];for(const a of alternatives){if(result.length===4)break;if(a.toLowerCase()!==w.toLowerCase()&&!result.includes(a))result.push(a)}return result})}}
+// Distractors are sourced exclusively from target-language sentences.
+function targetLanguagePool(language, pairs){
+ const sources=[...pairs,...Object.values(LIB[language]||{}).flat(),...Object.values(CURATED[language]||{}).flat()];
+ return [...new Set(sources.flatMap(pair=>tokenize(pair[1])))];
+}
+function makeSentence(pair, pool){
+ const words=tokenize(pair[1]);
+ return {en:pair[0],words,waves:words.map(w=>{
+  const result=[w], seen=new Set([w.toLocaleLowerCase()]);
+  for(const candidate of [...words,...pool]){
+   const key=candidate.toLocaleLowerCase();
+   if(!seen.has(key)){result.push(candidate);seen.add(key)}
+   if(result.length===4)break;
+  }
+  return result;
+ })};
+}
 function showMenu(){completionToken++;paused=true;syncPauseButton();$('menu').style.display='block';$('gameArea').style.display='none';try{speechSynthesis.cancel()}catch(e){}}
-function startGame(pairs){if(!pairs.length)return;sentences=pairs.map(makeSentence);activeLanguage=$('language').value;$('menu').style.display='none';$('gameArea').style.display='block';restart()}
+function startGame(pairs){if(!pairs.length)return;activeLanguage=$('language').value;const pool=targetLanguagePool(activeLanguage,pairs);sentences=pairs.map(pair=>makeSentence(pair,pool));$('menu').style.display='none';$('gameArea').style.display='block';restart()}
 function fillSelect(el,vals){el.replaceChildren(...vals.map(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;return o}))}
 function parsePairs(){return $('custom').value.split(/\r?\n/).map(x=>{const bits=x.split(/\t|\s*\|\s*/).map(y=>y.trim());return bits.length===2&&bits.every(Boolean)?bits:null}).filter(Boolean)}
 function updatePreview(){const p=parsePairs();$('preview').textContent=p.length+' valid sentence pairs'+(p.length?' · '+p[0][0]+' → '+p[0][1]:' · Paste tab-separated pairs or use a built-in topic')}
