@@ -9,9 +9,9 @@ const extract = (from, to) => {
   assert.ok(start >= 0 && end > start, 'Missing generator source: ' + from);
   return html.slice(start, end);
 };
-const library = html.match(/const LIB=(\{.*?\});\s*const CURATED=/s);
+const library = html.match(/const LIB=(\{.*?\});[\s\S]*?const CURATED=/);
 assert.ok(library, 'Missing language library');
-const curated = html.match(/const CURATED=(\{.*?\});\s*function tokenize/s);
+const curated = html.match(/const CURATED=(\{.*?\});[\s\S]*?function tokenize/);
 assert.ok(curated, 'Missing curated library');
 const context = vm.createContext({});
 vm.runInContext('const LIB=' + library[1] + '; const CURATED=' + curated[1] + ';' +
