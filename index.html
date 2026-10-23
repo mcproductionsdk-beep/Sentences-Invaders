@@ -142,7 +142,7 @@ $('custom').oninput=updatePreview;updatePreview();
 $('swap').onclick=()=>{$('custom').value=$('custom').value.split(/\r?\n/).map(line=>{const bits=line.split(/\t|\s*\|\s*/);return bits.length===2?bits[1].trim()+'\t'+bits[0].trim():line}).join('\n');updatePreview()};
 $('startBuilt').onclick=()=>startGame(LIB[$('language').value][$('topic').value]);
 $('useCustom').onclick=()=>{const pairs=studentSet?studentSet.pairs.map(([target,english])=>[english,target]):parsePairs();if(pairs.length<2){$('menuMsg').textContent='Please enter at least two valid sentence pairs separated by a tab or |.';return}$('menuMsg').textContent='';startGame(pairs)};
-$('backMenu').onclick=showMenu;
+$('backMenu').onclick=()=>{const id=new URLSearchParams(location.hash.slice(1)).get('set');if(id){location.assign('https://boringteacher.com/sentence-games/#set='+encodeURIComponent(id));return}showMenu()};
 const SENTENCE_API='https://boringteacher-sentences-api-staging.mcproductionsdk.workers.dev';
 const SHARE_BASE='https://boringteacher.com/sentence-games/';
 let studentSet=null;
