@@ -182,7 +182,7 @@ async function loadStudentSet(){
  if(!set||!validSharedPairs(set.pairs)||!Array.from($('language').options).some(o=>o.value===set.language))throw Error('The shared sentences or language are invalid');
  studentSet=set;const pairs=set.pairs.map(([target,english])=>[english,target]);$('language').value=set.language;updateTopics();$('custom').value=pairs.map(p=>p.join('\t')).join('\n');updatePreview();
  $('sentencePanel').querySelector('h2').textContent=set.title||'YOUR SENTENCES';$('preview').textContent=pairs.length+' sentences ready · '+set.language;
- $('useCustom').textContent='▶ PLAY SENTENCES';$('useCustom').disabled=false;msg.textContent='Ready to play.';
+ $('useCustom').textContent='▶ PLAY SENTENCES';$('useCustom').disabled=false;msg.textContent='Ready to play.';if(new URLSearchParams(location.search).get('autoplay')==='1')$('useCustom').click();
  }catch(error){msg.textContent='Unable to load shared sentences: '+(error.name==='AbortError'?'request timed out':error.message);$('preview').textContent='Please ask your teacher for a new link.';}
 }
 
