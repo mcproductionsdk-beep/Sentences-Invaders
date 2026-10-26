@@ -169,7 +169,7 @@ $('custom').oninput=updatePreview;updatePreview();
 $('swap').onclick=()=>{$('custom').value=$('custom').value.split(/\r?\n/).map(line=>{const bits=line.split(/\t|\s*\|\s*/);return bits.length===2?bits[1].trim()+'\t'+bits[0].trim():line}).join('\n');updatePreview()};
 $('startBuilt').onclick=()=>startGame(LIB[$('language').value][$('topic').value]);
 $('useCustom').onclick=()=>{const pairs=studentSet?studentSet.pairs.map(([target,english])=>[english,target]):parsePairs();if(pairs.length<2){$('menuMsg').textContent='Please enter at least two valid sentence pairs separated by a tab or |.';return}$('menuMsg').textContent='';startGame(pairs)};
-$('backMenu').onclick=()=>{const id=new URLSearchParams(location.hash.slice(1)).get('set');if(id){location.assign('https://boringteacher.com/sentence-games/#set='+encodeURIComponent(id));return}showMenu()};
+$('backMenu').onclick=()=>{const id=new URLSearchParams((window.parent!==window?window.parent.location:window.location).hash.slice(1)).get('set');if(id){(window.parent!==window?window.parent.location:window.location).assign('https://boringteacher.com/sentence-games/#set='+encodeURIComponent(id));return}showMenu()};
 const SENTENCE_API='https://boringteacher-sentences-api-staging.mcproductionsdk.workers.dev';
 const SHARE_BASE='https://boringteacher.com/sentence-games/';
 let studentSet=null;
@@ -193,14 +193,14 @@ $('share').onclick=async()=>{
  finally{btn.disabled=false;btn.textContent='🔗 SHARE WITH STUDENTS'}
 };
 async function loadStudentSet(){
- const id=new URLSearchParams(location.hash.slice(1)).get('set');if(!id)return;
+ const id=new URLSearchParams((window.parent!==window?window.parent.location:window.location).hash.slice(1)).get('set');if(!id)return;
  const msg=$('menuMsg');$('menu').classList.add('student-mode');$('gameSettings').style.display='none';$('customHelp').style.display='none';$('preview').textContent='Loading shared sentences…';$('useCustom').disabled=true;msg.textContent='Loading your teacher’s sentences…';
  try{if(!/^S[A-HJ-NP-Z2-9]{8}$/i.test(id))throw Error('Invalid sharing link');
  const data=await apiRequest('/sentence-sets/'+encodeURIComponent(id));const set=data.set;
  if(!set||!validSharedPairs(set.pairs)||!Array.from($('language').options).some(o=>o.value===set.language))throw Error('The shared sentences or language are invalid');
  studentSet=set;const pairs=set.pairs.map(([target,english])=>[english,target]);$('language').value=set.language;updateTopics();$('custom').value=pairs.map(p=>p.join('\t')).join('\n');updatePreview();
  $('sentencePanel').querySelector('h2').textContent=set.title||'YOUR SENTENCES';$('preview').textContent=pairs.length+' sentences ready · '+set.language;
- $('useCustom').textContent='▶ PLAY SENTENCES';$('useCustom').disabled=false;msg.textContent='Ready to play.';if(new URLSearchParams(location.search).get('autoplay')==='1')$('useCustom').click();
+ $('useCustom').textContent='▶ PLAY SENTENCES';$('useCustom').disabled=false;msg.textContent='Ready to play.';if(new URLSearchParams((window.parent!==window?window.parent.location:window.location).search).get('autoplay')==='1')$('useCustom').click();
  }catch(error){msg.textContent='Unable to load shared sentences: '+(error.name==='AbortError'?'request timed out':error.message);$('preview').textContent='Please ask your teacher for a new link.';}
 }
 
@@ -213,7 +213,7 @@ for(const surface of [deck,canvas]){surface.addEventListener('pointerdown',down,
 (function(){
  const host=document.getElementById('crossGameNav');
  if(!host)return;
- const id=new URLSearchParams(location.hash.slice(1)).get('set');
+ const id=new URLSearchParams((window.parent!==window?window.parent.location:window.location).hash.slice(1)).get('set');
  if(!/^S[A-HJ-NP-Z2-9]{8}$/i.test(id||''))return;
  const items=[['👾 Sentence Invaders','sentences-invaders'],['🟡 Sentence Eater','sentence-eater'],['📦 Sentence Warehouse','sentence-warehouse'],['🐈 Sentence Cat (Test)','sentence-cat-test']];
  const heading=document.createElement('h3');heading.textContent='CHOOSE ANOTHER SENTENCE GAME';
